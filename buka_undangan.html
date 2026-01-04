@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Undangan</a>
+
+    <div class="nav-toggle" id="mobile-menu">
+      <span></span><span></span><span></span>
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-links">Home</a></li>
+      <li><a href="#detailAcara" class="nav-links">Detail Acara</a></li>
+      <li><a href="#coupleSection" class="nav-links">Pasangan</a></li>
+      <li><a href="#lokasiAcara" class="nav-links">Lokasi</a></li>
+      <li><a href="#gallerySection" class="nav-links">Gallery</a></li>
+      <li><a href="#giftSection" class="nav-links">Gift</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= MUSIC ================= -->
+<audio id="bgMusic" loop>
+  <source src="image/audio.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">♫</button>
+
+<div class="wrapper fade-in">
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="hero">
+  <h1>Undangan Pernikahan</h1>
+
+  <div class="hero-photo">
+    <img src="image/gambar7.jpg" alt="Rendi & Nurlita">
+  </div>
+
+  <p class="guest">
+    Kepada Yth.<br>
+    <strong class="namaTamu">Bapak/Ibu/Saudara/i</strong>
+  </p>
+
+  <h2>Rendi Kurniawan &amp; Nurlita Amelia, S.Kom</h2>
+</section>
+
+<!-- ================= PEMBUKA ================= -->
+<section class="detail-acara-text">
+  <p>
+    Tanpa mengurangi rasa hormat, kami mengundang
+    <strong class="namaTamu">Bapak/Ibu/Saudara/i</strong>
+    untuk hadir di acara pernikahan kami.
+  </p>
+</section>
+
+<!-- ================= DETAIL ACARA ================= -->
+<section id="detailAcara" class="card">
+  <h3>Detail Acara</h3>
+  <table>
+    <tr><td>Hari / Tanggal</td><td>Minggu, 08 Februari 2026</td></tr>
+    <tr><td>Waktu</td><td>09.00 WIB – Selesai</td></tr>
+    <tr><td>Tempat</td><td>Kediaman Mempelai Wanita</td></tr>
+  </table>
+</section>
+
+<!-- ================= COUNTDOWN ================= -->
+<div class="countdown">
+  <div><span id="days">0</span>Hari</div>
+  <div><span id="hours">0</span>Jam</div>
+  <div><span id="minutes">0</span>Menit</div>
+  <div><span id="seconds">0</span>Detik</div>
+</div>
+
+<!-- ================= COUPLE ================= -->
+<section id="coupleSection" class="card couple-section">
+
+  <p class="event-desc">
+    Dengan memohon limpahan Ridho dan Kasih Sayang Allah SWT,
+    kami bermaksud mengundang
+    <strong class="namaTamu">Bapak/Ibu/Saudara/i</strong>
+    dalam acara pernikahan kami:
+  </p>
+
+  <div class="couple-box">
+
+    <div class="couple">
+      <hr>
+      <h2>Nurlita Amelia, S.Kom</h2>
+      <span class="parents">
+        Putri dari Bapak Ukar Jatim, S.Pd<br>
+        dan Ibu Yayah Aliyah
+      </span>
+      <hr>
+    </div>
+
+    <div class="couple-separator"><span>dengan</span></div>
+
+    <div class="couple">
+      <hr>
+      <h2>Rendi Kurniawan</h2>
+      <span class="parents">
+        Putra dari Bapak Sakhroni<br>
+        dan Ibu Nurlela
+      </span>
+      <hr>
+    </div>
+
+  </div>
+
+  <p class="event-thanks">
+    Ungkapan terima kasih dan rasa syukur kami sampaikan atas kehadiran
+    <strong class="namaTamu">Bapak/Ibu/Saudara/i</strong>
+    serta doa restu kepada kedua mempelai.
+  </p>
+
+  <div class="family-box">
+    <div><b>Keluarga Bapak Ukar Jatim, S.Pd</b></div>
+    <div><b>Keluarga Bapak Sakhroni</b></div>
+  </div>
+
+</section>
+
+<!-- ================= LOKASI ================= -->
+<section id="lokasiAcara" class="card">
+  <h3>Lokasi Acara</h3>
+  <iframe
+    src="https://www.google.com/maps?q=-6.555187431003142,105.8931885205594&z=16&output=embed"
+    loading="lazy">
+  </iframe>
+  <a class="btn"
+     href="https://maps.google.com/?q=-6.555187431003142,105.8931885205594"
+     target="_blank">
+    Buka di Google Maps
+  </a>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallerySection" class="card gallery-card">
+  <h2>Our Gallery</h2>
+  <p class="gallery-desc">
+    Dengan izin Allah, setiap momen yang terjalin menjadi saksi
+    perjalanan cinta kami menuju ikatan suci.
+  </p>
+
+  <div class="gallery">
+    <img src="image/foto1.jpg" alt="Gallery 1">
+    <img src="image/foto2.jpg" alt="Gallery 2">
+    <img src="image/foto3.jpg" alt="Gallery 3">
+    <img src="image/foto4.jpg" alt="Gallery 4">
+    <img src="image/foto5.jpg" alt="Gallery 5">
+    <img src="image/foto6.jpg" alt="Gallery 6">
+  </div>
+</section>
+
+<!-- ================= UCAPAN ================= -->
+<section id="blessing" class="blessing-section">
+  <h3>Wedding Best Blessing</h3>
+
+  <form id="blessingForm" class="blessing-form">
+    <input type="text" id="name" placeholder="Nama Anda" required>
+    <textarea id="message" placeholder="Tulis ucapan & doa..." required></textarea>
+    <button type="submit">Kirim Ucapan</button>
+  </form>
+
+  <div id="blessingList" class="blessing-list"></div>
+</section>
+
+<!-- ================= RSVP & GIFT ================= -->
+<section id="giftSection" class="card gift-card">
+
+  <section id="rsvpSection" class="card">
+    <h3>Konfirmasi Kehadiran</h3>
+    <a class="btn" href="https://wa.me/6285711292422?text=Saya%20akan%20hadir" target="_blank">
+      Saya Akan Hadir
+    </a>
+    <a class="btn danger"
+       href="https://wa.me/6285882559162?text=Saya%20tidak%20bisa%20hadir"
+       target="_blank">
+      Saya Tidak Bisa Hadir
+    </a>
+  </section>
+
+  <h2>Wedding Gift</h2>
+
+  <div class="gift-item">
+    <img src="image/bni.jpg" alt="BNI">
+    <div class="gift-info">
+      <strong id="rekBank">1816738568</strong>
+      <small>a.n Nurlita Amelia</small>
+    </div>
+    <button onclick="copyText('rekBank')">Salin</button>
+  </div>
+
+  <div class="gift-item">
+    <img src="image/dana.png" alt="Dana">
+    <div class="gift-info">
+      <strong id="rekDana">085882559162</strong>
+      <small>a.n Nurlita Amelia</small>
+    </div>
+    <button onclick="copyText('rekDana')">Salin</button>
+  </div>
+
+</section>
+
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  // Ambil nama tamu dari URL
+  const params = new URLSearchParams(window.location.search);
+  const nama = params.get("to");
+
+  if (nama && nama.trim() !== "") {
+    const namaFix = decodeURIComponent(nama.replace(/\+/g, " "));
+    document.querySelectorAll(".namaTamu").forEach(el => {
+      el.innerText = namaFix;
+    });
+  }
+</script>
+<p class="guest" id="guestName">Bapak/Ibu/Saudara/i</p>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

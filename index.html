@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-content fade-in">
+
+    <img src="image/foto1.jpg" class="cover-img" alt="Foto pasangan">
+
+    <p class="cover-label">UNDANGAN PERNIKAHAN</p>
+
+    <h1 class="cover-name">
+      Rendi Kurniawan <span>&</span><br>
+      Nurlita Amelia, S.Kom
+    </h1>
+
+    <!-- NAMA TAMU (DINAMIS) -->
+    <p class="cover-to">
+      Kepada Yth.<br>
+      <strong id="namaTamu">Bapak/Ibu/Saudara/i</strong>
+    </p>
+
+    <!-- LINK KE HALAMAN UNDANGAN -->
+    <a href="buka_undangan.html" class="open-btn">
+      Buka Undangan
+    </a>
+
+    <p class="cover-note">
+      Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir
+      di acara pernikahan kami.
+    </p>
+
+  </div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  // Ambil parameter ?to= dari URL
+  const params = new URLSearchParams(window.location.search);
+  const nama = params.get("to");
+
+  // Jika nama ada di URL, tampilkan
+  if (nama && nama.trim() !== "") {
+    document.getElementById("namaTamu").innerText =
+      decodeURIComponent(nama.replace(/\+/g, " "));
+  }
+</script>
+
+</body>
+</html>
